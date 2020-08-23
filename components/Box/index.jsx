@@ -36,7 +36,7 @@ const Box = ({ box }) => {
         <div className={styles.title}>{box.title}</div>
         <div className={styles.name}>
           {box.name}
-          <span>{box.type}</span>
+          <div className={styles.type}>{box.type}</div>
         </div>
         <ul className={styles.info}>
           <li>

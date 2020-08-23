@@ -13,6 +13,13 @@
   overflow: hidden;
   cursor: pointer;
 }
+.title {
+  margin: 0 0 10px 0;
+  padding-top: 22px;
+  font-size: 16px;
+  color: #666;
+}
+.title,
 .name,
 .info {
   padding-left: 49px;
@@ -22,6 +29,9 @@
   margin: 0 0 5px 0;
   color: #000;
   font-size: 34px;
+}
+.type {
+  font-size: 20px;
 }
 .info {
   margin: 0;
@@ -36,6 +46,8 @@
 }
 .size {
   position: absolute;
+  padding: 5px 0;
+  box-sizing: border-box;
   right: 10px;
   bottom: 10px;
   background: #1698d9;
@@ -54,6 +66,12 @@
 .root_state_disabled .box {
   cursor: default;
   border-color: #b3b3b3;
+}
+.root_state_disabled .box,
+.root_state_disabled .title,
+.root_state_disabled .name,
+.root_state_disabled .info {
+  color: #d2d2d2;
 }
 .root_state_disabled .size {
   background: #b3b3b3;
