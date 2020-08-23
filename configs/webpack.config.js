@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         exclude: /node_modules/,
         use: [
           "style-loader",
@@ -27,6 +27,13 @@ module.exports = {
             options: { importLoaders: 1, modules: true, sourceMap: isDev },
           },
         ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+        loader: "url-loader",
+        options: {
+          limit: 8192,
+        },
       },
     ],
   },
