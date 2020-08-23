@@ -1,0 +1,20 @@
+/* @font-face {
+  font-family: Exo2;
+  src: url("../../Exo2.0-Thin.otf");
+} */
+.root {
+}
+.title {
+  /* font-family: Exo2, sans-serif; */
+  color: #fff;
+  text-align: center;
+}
+.boxes {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.box {
+  margin: 0 40px;
+}

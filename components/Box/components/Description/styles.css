@@ -1,0 +1,8 @@
+.description {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.description_state_disabled {
+  color: #ffff66;
+}

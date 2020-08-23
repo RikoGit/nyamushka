@@ -1,0 +1,70 @@
+.root {
+  width: 320px;
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  border: 4px solid #1698d9;
+  border-radius: 11px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.name,
+.info {
+  padding-left: 49px;
+  padding-right: 49px;
+}
+.name {
+  color: #000;
+}
+.info {
+  margin: 0;
+  color: #666;
+  list-style-type: none;
+}
+.picture {
+  position: absolute;
+  left: -24px;
+  bottom: -88px;
+}
+.size {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background: #1698d9;
+  width: 81px;
+  height: 81px;
+  border-radius: 40px;
+  color: #fff;
+  text-align: center;
+}
+.size__number {
+  font-size: 41px;
+}
+.root_state_selected .box {
+  border-color: #d91667;
+}
+.root_state_disabled .box {
+  cursor: default;
+  border-color: #b3b3b3;
+}
+.root_state_disabled .size {
+  background: #b3b3b3;
+}
+.root_state_disabled .picture {
+  opacity: 0.5;
+}
+.root_state_selected .size {
+  background: #d91667;
+}
+/*.root_state_selectedHover .box {
+}*/
+.root_state_defaultHover .box {
+  border-color: #2ea8e6;
+}
+.root_state_defaultHover .size {
+  border-color: #2ea8e6;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "nyamushka",
+  "version": "0.0.1",
+  "description": "nyamushka",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config configs/webpack.config.js",
+    "start": "npm run build && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikoGit/nyamushka.git"
+  },
+  "keywords": [
+    "cat",
+    "food",
+    "nyamushka"
+  ],
+  "type": "module",
+  "author": "RikoGit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RikoGit/nyamushka/issues"
+  },
+  "homepage": "https://github.com/RikoGit/nyamushka#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "classnames": "^2.2.6",
+    "css-loader": "^4.2.1",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "express": "^4.17.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
