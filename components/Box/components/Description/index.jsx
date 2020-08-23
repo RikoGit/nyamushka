@@ -3,8 +3,21 @@ import cn from "classnames";
 
 import styles from "./styles.css";
 
-const Description = ({ isDisabled, isSelected, type, description }) => {
-  console.log(isSelected);
+const Description = ({
+  isDisabled,
+  isSelected,
+  type,
+  description,
+  onClick,
+}) => {
+  const descriptionDefault = (
+    <>
+      Чего сидишь? Порадуй котэ,{" "}
+      <span className={styles.button} onClick={onClick}>
+        купи.
+      </span>
+    </>
+  );
 
   return (
     <div
@@ -17,7 +30,7 @@ const Description = ({ isDisabled, isSelected, type, description }) => {
         ? `Печалька, ${type} закончился.`
         : isSelected
         ? description
-        : "Чего сидишь? Порадуй котэ, <span>купи.</span>"}
+        : descriptionDefault}
     </div>
   );
 };

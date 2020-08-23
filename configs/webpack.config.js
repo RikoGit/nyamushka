@@ -29,7 +29,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|otf|woff|woff2)$/i,
         loader: "url-loader",
         options: {
           limit: 8192,
@@ -40,6 +40,6 @@ module.exports = {
   output: {
     filename: "index.js",
     path: join(staticDir, "build"),
-    publicPath: "/",
+    publicPath: "/build/",
   },
 };

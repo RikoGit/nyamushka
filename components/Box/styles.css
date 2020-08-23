@@ -1,4 +1,5 @@
 .root {
+  margin: 0 0 25px 0;
   width: 320px;
 }
 .box {
@@ -18,22 +19,25 @@
   padding-right: 49px;
 }
 .name {
+  margin: 0 0 5px 0;
   color: #000;
+  font-size: 34px;
 }
 .info {
   margin: 0;
   color: #666;
   list-style-type: none;
+  font-size: 13px;
 }
 .picture {
   position: absolute;
-  left: -24px;
-  bottom: -88px;
+  left: -26px;
+  bottom: -92px;
 }
 .size {
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: 10px;
+  bottom: 10px;
   background: #1698d9;
   width: 81px;
   height: 81px;
@@ -42,7 +46,7 @@
   text-align: center;
 }
 .size__number {
-  font-size: 41px;
+  font-size: 43px;
 }
 .root_state_selected .box {
   border-color: #d91667;

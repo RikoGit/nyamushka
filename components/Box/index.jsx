@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cn from "classnames";
+import plural from "plural-ru";
 
 import Description from "./components/Description/index.jsx";
 import styles from "./styles.css";
@@ -13,6 +14,15 @@ const Box = ({ box }) => {
     ? styles.root_state_selectedHover
     : "";
 
+  const onClick = () => {
+    if (box.isDisabled) return;
+
+    setIsSelected(!isSelected);
+  };
+
+  const portions = plural(box.portion, "порция", "порции", "порций");
+  const bonus = plural(box.bonus, "мышь", "мыши", "мышей");
+
   return (
     <div
       className={cn(
@@ -22,13 +32,7 @@ const Box = ({ box }) => {
         disabledBoxClass
       )}
     >
-      <div
-        className={styles.box}
-        onClick={() => {
-          if (box.isDisabled) return;
-          setIsSelected(!isSelected);
-        }}
-      >
+      <div className={styles.box} onClick={onClick}>
         <div className={styles.title}>{box.title}</div>
         <div className={styles.name}>
           {box.name}
@@ -36,10 +40,11 @@ const Box = ({ box }) => {
         </div>
         <ul className={styles.info}>
           <li>
-            <strong>40</strong> порций
+            <strong>{box.portion}</strong> {portions}
           </li>
           <li>
-            <strong>2</strong> мыши в подарок
+            {box.bonus !== 1 ? <strong>{box.bonus} </strong> : ""}
+            {bonus} в подарок
           </li>
           <li>заказчик доволен</li>
         </ul>
@@ -51,7 +56,9 @@ const Box = ({ box }) => {
           height="361"
         />
         <div className={styles.size}>
-          <span className={styles.size__number}>{box.size / 1000}</span>
+          <span className={styles.size__number}>
+            {(box.size / 1000).toLocaleString("ru")}
+          </span>
           <br />
           кг
         </div>
@@ -61,6 +68,7 @@ const Box = ({ box }) => {
         isSelected={isSelected}
         type={box.type}
         description={box.description}
+        onClick={onClick}
       />
     </div>
   );

@@ -1,8 +1,15 @@
 .description {
+  padding: 15px 0;
   width: 100%;
   color: #fff;
   text-align: center;
+  font-size: 13px;
 }
 .description_state_disabled {
   color: #ffff66;
+}
+.button {
+  cursor: pointer;
+  color: #1698d9;
+  border-bottom: 1px dashed #1698d9;
 }

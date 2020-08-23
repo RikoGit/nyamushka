@@ -1,11 +1,15 @@
-/* @font-face {
+@font-face {
   font-family: Exo2;
   src: url("../../Exo2.0-Thin.otf");
-} */
+}
 .root {
+  align-self: center;
+  justify-self: center;
 }
 .title {
-  /* font-family: Exo2, sans-serif; */
+  padding: 0 0 35px 0;
+  font-family: Exo2, sans-serif;
+  font-size: 34px;
   color: #fff;
   text-align: center;
 }
@@ -14,6 +18,8 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .box {
   margin: 0 40px;

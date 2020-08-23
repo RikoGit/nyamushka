@@ -7,4 +7,5 @@ body {
 }
 .root {
   display: grid;
+  min-height: 100vh;
 }
