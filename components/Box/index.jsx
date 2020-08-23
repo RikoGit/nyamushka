@@ -51,7 +51,8 @@ const Box = ({ box }) => {
         <img
           className={styles.picture}
           alt={`${box.name} ${box.type}`}
-          src={`../../images/${box.picture}`}
+          // src={`../../docs/images/${box.picture}`}
+          src={`images/${box.picture}`}
           widht="370"
           height="361"
         />

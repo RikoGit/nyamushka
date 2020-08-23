@@ -40,6 +40,6 @@ module.exports = {
   output: {
     filename: "index.js",
     path: join(staticDir, "docs"),
-    publicPath: "/docs/",
+    publicPath: "",
   },
 };
