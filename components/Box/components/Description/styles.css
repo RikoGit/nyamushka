@@ -13,3 +13,7 @@
   color: #1698d9;
   border-bottom: 1px dashed #1698d9;
 }
+.button_state_hover {
+  color: #2ea8e6;
+  border-color: #2ea8e6;
+}
